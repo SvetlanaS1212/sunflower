@@ -1,13 +1,13 @@
 Smoke test suite SWAG LABS www.saucedemo.com with Robot Framework
 
-1. Test cases: User can login.
+1. Test cases: Approved User can login and banned User can not login.
 
 | Number | Discription | Steps | Expected result |
 | :-- | :-- | :-- | :-- |
 | 1 | User standart_user can login to app | Open browser at "https://www.saucedemo.com" -> Insert login "standart_user" -> Insert password "secret_sauce" -> Click login-button | User can login and see products page |
-| 4 | User locked_out_user can login to app | Open browser at "https://www.saucedemo.com" -> Insert login "locked_out_user" -> Insert password "secret_sauce" -> Click login-button | User can login and see products page |
 | 2 | User problem_user can login to app | Open browser at "https://www.saucedemo.com" -> Insert login "problem_user" -> Insert password "secret_sauce" -> Click login-button | User can login and see products page |
 | 3 | User performance_glitch_user can login to app | Open browser at "https://www.saucedemo.com" -> Insert login "performance_glitch_user" -> Insert password "secret_sauce" -> Click login-button | User can login and see products page |
+| 4 | Banned User locked_out_user can not login to app | Open browser at "https://www.saucedemo.com" -> Insert login "locked_out_user" -> Insert password "secret_sauce" -> Click login-button | Page should contain: "Sorry, this user has been locked out" |
 
 2. Test cases: User can choose product, add it to the cart and delete it from the cart.
 
