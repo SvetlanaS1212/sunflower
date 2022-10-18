@@ -5,9 +5,9 @@ Smoke test suite SWAG LABS www.saucedemo.com with Robot Framework
 | Number | Discription | Steps | Expected result |
 | :-- | :-- | :-- | :-- |
 | 1 | User standart_user can login to app | Open browser at "https://www.saucedemo.com" -> Insert login "standart_user" -> Insert password "secret_sauce" -> Click login-button | User can login and see products page |
-| 2 | User locked_out_user can login to app | Open browser at "https://www.saucedemo.com" -> Insert login "locked_out_user" -> Insert password "secret_sauce" -> Click login-button | User can login and see products page |
-| 3 | User problem_user can login to app | Open browser at "https://www.saucedemo.com" -> Insert login "problem_user" -> Insert password "secret_sauce" -> Click login-button | User can login and see products page |
-| 4 | User performance_glitch_user can login to app | Open browser at "https://www.saucedemo.com" -> Insert login "performance_glitch_user" -> Insert password "secret_sauce" -> Click login-button | User can login and see products page |
+| 4 | User locked_out_user can login to app | Open browser at "https://www.saucedemo.com" -> Insert login "locked_out_user" -> Insert password "secret_sauce" -> Click login-button | User can login and see products page |
+| 2 | User problem_user can login to app | Open browser at "https://www.saucedemo.com" -> Insert login "problem_user" -> Insert password "secret_sauce" -> Click login-button | User can login and see products page |
+| 3 | User performance_glitch_user can login to app | Open browser at "https://www.saucedemo.com" -> Insert login "performance_glitch_user" -> Insert password "secret_sauce" -> Click login-button | User can login and see products page |
 
 2. Test cases: User can choose product, add it to the cart and delete it from the cart.
 
