@@ -1,0 +1,5 @@
+.*
+!.gitignore
+reports/*
+!reports/log.html
+__pycache__
